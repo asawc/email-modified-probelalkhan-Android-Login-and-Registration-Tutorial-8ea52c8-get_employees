@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:padding="6dip"
+    android:paddingStart="10dip"
+    android:paddingEnd="10dip">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="150dp"
+        android:layout_height="56dp"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="0dp"
+        android:gravity="center_vertical"
+        android:text="@string/name"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/surname"
+        android:layout_width="150dp"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="false"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toStartOf="@+id/symbol"
+        android:layout_toEndOf="@+id/name"
+        android:gravity="center_vertical"
+        android:text="@string/surname"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/symbol"
+        android:layout_width="132dp"
+        android:layout_height="56dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="false"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="0dp"
+        android:gravity="center_vertical"
+        android:text="Symbol"
+        android:textSize="20sp" />
+
+</RelativeLayout>
