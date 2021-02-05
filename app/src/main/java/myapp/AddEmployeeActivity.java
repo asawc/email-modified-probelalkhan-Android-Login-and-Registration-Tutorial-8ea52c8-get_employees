@@ -55,6 +55,15 @@ public class AddEmployeeActivity extends AppCompatActivity {
             }
         });
 
+        findViewById(R.id.buttonShowListOfEmployees).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //if user pressed on button register
+                //here we will register the employee to server
+                openShowEmployeesActivity();
+            }
+        });
+
         findViewById(R.id.buttonScan4).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -74,6 +83,11 @@ public class AddEmployeeActivity extends AppCompatActivity {
             }
         });*/
 
+    }
+
+    public void openShowEmployeesActivity() {
+        Intent intent = new Intent(this, ShowEmployeesActivity.class);
+        startActivity(intent);
     }
 
     public void openScanActivity() {
