@@ -95,14 +95,14 @@ public class LoginActivity extends AppCompatActivity {
                         Toast.makeText(getApplicationContext(), obj.getString("message"), Toast.LENGTH_SHORT).show();
 
                         //getting the user from the response
-                        JSONObject userJson = obj.getJSONObject("user");
+                        JSONObject Json = obj.getJSONObject("user");
 
                         //creating a new user object
                         User user = new User(
-                                userJson.getInt("id"),
-                                userJson.getString("username"),
-                                userJson.getString("email")//,
-                                //userJson.getString("gender")
+                                Json.getInt("id"),
+                                Json.getString("username"),
+                                Json.getString("email")//,
+                                //Json.getString("gender")
                         );
 
                         //storing the user in shared preferences
