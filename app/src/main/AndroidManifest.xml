@@ -16,6 +16,7 @@
 
         <uses-library android:name="org.apache.http.legacy" android:required="false"/>
 
+        <activity android:name="myapp.FindEmployeeActivity" />
         <activity android:name="myapp.ShowEmployeesActivity" />
         <activity android:name="myapp.AddEmployeeActivity" />
         <activity android:name="myapp.AddProductActivity" />

@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import myapp.AddEmployeeActivity;
+import myapp.FindEmployeeActivity;
 import myapp.ScanActivity;
 import myapp.ShowEmployeesActivity;
 
@@ -80,9 +81,16 @@ public class ProfileActivity extends AppCompatActivity {
         findViewById(R.id.buttonShowEmployeesActivity).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                finish(); //
-                //ScanActivity.getInstance(getApplicationContext()).logout();
+                finish();
                 openShowEmployeesActivity();
+            }
+        });
+
+        findViewById(R.id.buttonFindEmployeeActivity).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //finish();
+                openFindEmployeeActivity();
             }
         });
     }
@@ -99,6 +107,11 @@ public class ProfileActivity extends AppCompatActivity {
 
     public void openShowEmployeesActivity() {
         Intent intent = new Intent(this, ShowEmployeesActivity.class);
+        startActivity(intent);
+    }
+
+    public void openFindEmployeeActivity() {
+        Intent intent = new Intent(this, FindEmployeeActivity.class);
         startActivity(intent);
     }
 }

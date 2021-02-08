@@ -38,7 +38,7 @@ public class ShowEmployeesActivity extends ListActivity {
 
     JSONParser jsonParser = new JSONParser();
 
-    ArrayList<HashMap<String, String>> employeesList;
+    public ArrayList<HashMap<String, String>> employeesList;
 
     //private static String url_display_user = "http://10.0.3.2/android_connect/display_user.php";
 

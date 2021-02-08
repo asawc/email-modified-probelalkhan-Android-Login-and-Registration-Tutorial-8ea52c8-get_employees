@@ -92,6 +92,12 @@
             android:text="Show registered employees" />
 
         <Button
+            android:id="@+id/buttonFindEmployeeActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Find an employee" />
+
+        <Button
             android:id="@+id/buttonAddEmployeeActivity"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

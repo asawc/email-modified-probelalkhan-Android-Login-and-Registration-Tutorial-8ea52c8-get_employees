@@ -2,7 +2,7 @@ package net.simplifiedcoding.simplifiedcoding;
 
 public class URLs {
 
-    private static final String ROOT_URL = "http://10.0.5.137:81/php/Api.php?apicall="; // 10.0.5.137 /AndroidMySQLCrudTutorial/HeroApi/v1/
+    private static final String ROOT_URL = "http://10.0.5.75:81/php/Api.php?apicall="; // 10.0.5.137 /AndroidMySQLCrudTutorial/HeroApi/v1/
 
     public static final String URL_REGISTER = ROOT_URL + "signup";
     public static final String URL_LOGIN = ROOT_URL + "login";
