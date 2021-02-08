@@ -16,7 +16,16 @@
 
         <uses-library android:name="org.apache.http.legacy" android:required="false"/>
 
-        <activity android:name="myapp.FindEmployeeActivity" />
+        <activity
+            android:name="myapp.FindEmployeeActivity"
+            android:label="@string/app_name" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
         <activity android:name="myapp.ShowEmployeesActivity" />
         <activity android:name="myapp.AddEmployeeActivity" />
         <activity android:name="myapp.AddProductActivity" />

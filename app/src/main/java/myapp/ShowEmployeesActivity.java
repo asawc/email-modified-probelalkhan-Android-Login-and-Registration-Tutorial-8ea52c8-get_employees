@@ -47,7 +47,6 @@ public class ShowEmployeesActivity extends ListActivity {
     private static final String TAG_MESSAGE = "message";
 
     private static final String TAG_ID = "id";
- // sdsf
 
     private static final String TAG_EMPLOYEES = "employeeslist";
 
